@@ -15,14 +15,14 @@ public class func {
         System.out.print("Enter number ");
         in=sc.nextInt();
         arr = new int[in];
-        int max = arr[0];
+        int maxx = arr[0];
         for(int i=0;i<in;i++) {
             System.out.print("You number array ");
             arr[i]=sc.nextInt();
          }
         for(int i=0;i<arr.length;i++)
-            if(arr[i]>max) max =arr[i];
-        System.out.print("You max number " + max + "\n");
+            if(arr[i]>maxx) maxx =arr[i];
+        System.out.print("You max number " + maxx + "\n");
         return arr;
     }
     public static void fun(int a, int b){
