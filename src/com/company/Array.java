@@ -1,28 +1,25 @@
 package com.company;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.util.Arrays;
 import java.util.Scanner;
-import java.text.DecimalFormat;
 
 public class Array {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        Scanner a = new Scanner(System.in);
-        System.out.println("Введите число ");
-        int curs = a.nextInt();
-        int arr[] = new int[curs];
-        for(int i = 0; i < arr.length; i++) {
-            arr[i] = (int)(Math.random()*100);
-            System.out.print(arr[i] + " ");
+        int[] arr;
+        int in;
+        System.out.print("Enter you number ");
+        Scanner sc = new Scanner(System.in);
+        in = sc.nextInt();
+        arr = new int[in];
+        int max = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print("You number array ");
+            arr[i] = sc.nextInt();
         }
-        System.out.println("\nСортировка: ");
-        Arrays.sort(arr);
-        for(int i = 0; i <  arr.length; i++) {
-            System.out.print(arr[i] + "  ");
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) max = arr[i];
         }
-
+        System.out.println("Max number " + max);
     }
 }
