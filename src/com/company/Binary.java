@@ -15,7 +15,7 @@ public class Binary {
         } System.out.print(temp);
     }
     public static void main(String [] args) {
-        binar(3);
+        binar(6);
     }
 }
 
